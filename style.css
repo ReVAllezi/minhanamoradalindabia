@@ -1,63 +1,38 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #f9f9f9;
 }
 
 header {
-    background-color: #ffcccc;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 20px 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
 }
 
-h1 {
-    color: #333;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #333;
-}
-
-.photo {
-    margin-bottom: 20px;
-}
-
-.photo img {
-    max-width: 100%;
+.gallery img {
+    width: 100%;
     height: auto;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.photo p {
-    text-align: center;
-    font-style: italic;
-    color: #666;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #ffcccc;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     position: fixed;
-    width: 100%;
+    left: 0;
     bottom: 0;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 0 10px;
-    }
+    width: 100%;
 }
